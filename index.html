@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    <!-- JAVASCRIPT -->
+    <script src="./assets/js/script.js" defer></script>
+    <!-- ---------- -->
+    <title>Shindiri FE test 2022</title>
+</head>
+
+<body>
+    <header>
+        <div class="budget-info">
+            <p>Dostupan budzet za <span id="month"> </span> <span id="year"></span></p>
+            <h1 class="total" id="user-amount">0</h1>
+        </div>
+
+        <div class="budget-cards">
+            <div class="budget-card">
+                <p>PRIHODI</p>
+                <p id="income-amount"> rsd</p>
+            </div>
+
+            <div class="budget-card">
+                <p>RASHODI</p>
+                <p id="expenses-amount" style="margin-right: 2.7em;"> rsd</p>
+                <span class="expenses-percentage" id="expense-percentage">-0%</span>
+            </div>
+        </div>
+        <!-- <img src="./assets/img/pozadina1.jpg" alt="pozadina"> -->
+    </header>
+
+    <div class="form">
+        <form action="" id="form">
+            <select onchange="changeColor()" name="budget-options" id="budget-options" class="form-input">
+                <option value="1" selected>-</option>
+                <option value="0">+</option>
+            </select>
+
+            <input type="text" name="budget-name" id="budget-name" class="form-input"
+                placeholder="primer: gorivo, hrana" required>
+
+            <input type="number" name="budget-num" id="budget-num" class="form-input" min="1" placeholder="cena"
+                required>
+
+            <button class="form-input" id="submitBtn">
+                <p>dodaj rashod &nbsp;&nbsp;</p>
+                <ion-icon name="checkmark-outline"></ion-icon>
+            </button>
+
+        </form>
+
+    </div>
+
+    <main>
+
+        <div class="main-cards income-table" id="income-tab">
+            <h1>PRIHODI</h1>
+
+        </div>
+
+        <div class="main-cards expenses-table" id="expense-tab">
+            <h1>RASHODI</h1>
+            <!-- <div class="main-card">
+                <h2 class="main-info">Salary</h2>
+                <p>+1,500.00 <span class="table-percentage">9%</span></p>
+            </div>
+
+            <div class="main-card">
+                <h2 class="main-info">Salary</h2>
+                <p>+1,500.00 <span class="table-percentage">9%</span></p>
+            </div> -->
+        </div>
+    </main>
+
+
+
+    <!-- Ikonice -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
