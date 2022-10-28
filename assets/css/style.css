@@ -26,7 +26,7 @@ header{
     height: min-content;
     /* background-color: var(--plava1); */
     opacity: 1;
-    background-image: linear-gradient(0deg,rgba(4, 8, 31, 1), rgba(11, 18, 51, .8)), url("/assets/img/pozadina1.jpg");
+    background-image: linear-gradient(0deg,rgba(4, 8, 31, 1), rgba(11, 18, 51, .8)), url("../img/pozadina1.jpg");
     background-size: cover;
     background-position: center;
     color: white;
