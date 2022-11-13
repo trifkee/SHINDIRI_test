@@ -84,10 +84,14 @@ header{
     gap: 0.5em;
 }
 
+.expenses-text{
+    margin-right:  auto;
+}
+
 .expenses-percentage{
     width: max-content;
-    position: absolute;
-    right: 2%;
+/*     position: absolute;
+    right: 2%; */
     background-color: var(--svetlo-crvena);
     padding: .5em;
     border-radius: 5px;
